@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.carrosel-slide {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.box-filme {
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+.box-filme:hover {
+    animation-name: zoom-img;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: unset;
+    cursor: grab;
+}
+
+@keyframes zoom-img {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.owl-dot span {
+    margin-bottom: 30px;
+}
+
+.owl-dots {
+    margin-bottom: 30px;
+    height: 0;
+}
+
+.owl-nav {
+    margin-top: 0;
+    height: 0;
+}
+
+@media (max-width: 650px) {
+    header .container {
+        color: blue;
+        font-size: 16px;
+    }
+}

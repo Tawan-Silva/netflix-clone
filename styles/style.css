@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --vermelho: #e50914;
+  --preto: #141414ef;
+  --font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--preto);
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  gap: 10%;
+  background-color: #000000;
+}
+
+header img {
+  margin-left: 20px;
+  width: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header .container li a {
+  color: #aaa;
+}
+
+header .container li a:hover {
+  color: #fff;
+}
+
+main {
+  color: #ffffff;
+}
+
+main .filme-principal {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+}
+
+main .filme-principal .img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+main .filme-principal .img-wrapper img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  opacity: 0.7;
+  -webkit-animation: zoom 15s;
+          animation: zoom 15s;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+main .filme-principal .fas:nth-child(2) {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main .filme-principal .fa-volume-mute {
+  position: absolute;
+  right: calc(60% - 400px / 2);
+  bottom: calc(48% - 10px / 2);
+  cursor: pointer;
+}
+
+main .filme-principal .container {
+  position: absolute;
+  margin-left: 30px;
+  width: 50%;
+}
+
+main .filme-principal .container h3 {
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+main .filme-principal .container .descricao {
+  margin-bottom: 15px;
+}
+
+main .filme-principal .container #faixa-etaria {
+  border: solid 1px white;
+  padding: 0px 5px;
+  color: white;
+}
+
+main .filme-principal .container .span-custom {
+  color: #a3a3a3;
+}
+
+main .filme-principal .container .span-custom a {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+main .filme-principal .container .span-custom a:hover {
+  text-decoration: underline;
+}
+
+main .filme-principal .container .span-element {
+  margin-top: 15px;
+}
+
+main .filme-principal .buttons .button {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.507)));
+  background: linear-gradient(rgba(0, 0, 0, 0.507));
+  border: none;
+  color: #ffffff;
+  padding: 15px 25px;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 700ms ease all;
+  transition: 700ms ease all;
+}
+
+main .filme-principal .buttons .button:hover {
+  color: black;
+  background: white;
+}
+
+main .filme-principal .buttons .button i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  main header h3 {
+    font-size: var(--font-size);
+  }
+  main .filme-principal .container {
+    font-size: 12px;
+  }
+  main .filme-principal .container .buttons .button {
+    padding: 12px 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  main .container div:nth-child(1) h3 {
+    font-size: 30px;
+  }
+  main .container .span-element span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
